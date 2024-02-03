@@ -1,0 +1,181 @@
+.wrap {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modalcontents {
+    display: block;
+    position: fixed;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.color-safe {
+    color: blue;
+}
+
+.color-deadline {
+    color: #ff3e34;
+}
+
+.color-btn {
+    color: #3a0409;
+}
+
+.cancel-btn,.nav-link {
+    color: grey;
+}
+
+.scroll-click {
+    font-size: 16pt;
+    padding: 5px;
+    margin: 5px;
+    border: solid white;
+
+}
+
+.scroll-click:hover {
+    cursor: pointer;
+}
+
+.list-item {
+    width: 25%;
+    padding: 10px;
+    display: inline-block;
+}
+
+.main-image {
+    background-image: url('../components/images/backgroundhotel.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.content {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+
+.cost {
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+
+.checked {
+    color: black;
+}
+
+.search-form {
+    position: relative;
+    height: 40px;
+}
+
+.search-input {
+    position: absolute;
+    width: 100%;
+}
+
+.search-button {
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+.search-button img:hover {
+    cursor: pointer;
+}
+
+.img-main {
+    position: relative;
+}
+
+.img-main:hover .img-text {
+    opacity: 1;
+}
+
+.img-text {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.rel-text {
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.toggler {
+    margin-left: auto;
+}
+
+.toggler-style {
+    outline: 0;
+    border: 0;
+}
+
+.filtering-badge {
+    padding: 5px;
+    font-size: small;
+    border-radius: 20px;
+    margin-bottom:10px;
+    margin-right:10px;
+}
+
+.filtering-badge:hover {
+    cursor: pointer;
+}
+
+.filtering-badge-check {
+    background-color: #3a0409;
+    border-color: white;
+}
+
+.filtering-badge-uncheck {
+    background-color: white;
+    border-color: #3a0409;
+}
+
+
+.datepicker {
+    width: 215px;
+}
+@media screen and (max-width:1024px) {
+    body {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .list-item {
+        width: 100%;
+    }
+
+    .modalcontents {
+        width: 80%;
+    }
+}

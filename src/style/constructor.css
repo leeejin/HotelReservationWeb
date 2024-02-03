@@ -1,0 +1,47 @@
+div {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    
+}
+p{
+    margin-bottom: 5px;
+}
+a{
+    text-decoration: none;
+}
+.textcenter {
+    text-align: center;
+}
+
+.top {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+}
+
+.middle {
+    margin: auto;
+    min-height: 100vh; /* 최소 높이를 뷰포트 높이로 설정 */
+    padding: 10px;
+    overflow-y: auto; /* 스크롤 활성화 */
+  }
+.middle .component {
+    margin-top: 70px;
+}
+
+.background-color{
+    background-image:linear-gradient(to top, #be9464,white 50% );
+}
+.background-color1{
+    background-image:linear-gradient(to top, #be9464,white );
+}
+.background-color2{
+    background-color: #be9464;
+}
+.background-color3{
+    background-image:linear-gradient(to bottom, #be9464,white );
+}
